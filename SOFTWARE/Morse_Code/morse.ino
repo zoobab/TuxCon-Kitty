@@ -1,5 +1,4 @@
-// This displays the name BELLA in morse code
-// on the Olimex Kitty badge
+// This displays the name BELLA in morse code on the Olimex Kitty badge
 // Morse code table:
 // A .- || B -... || C -.-. || D -.. || E . || F ..-. || G --. ||  H .... || I .. || J .--- ||
 // K -.- || L .-.. || M -- || N -. || O --- || P .--. || Q --.- || R .-. || S ... || T - || 
