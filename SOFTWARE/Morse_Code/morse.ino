@@ -1,27 +1,20 @@
 // This displays the name BELLA in morse code
 // on the Olimex Kitty badge
-// Morse code:
+// Morse code table:
 // A .- || B -... || C -.-. || D -.. || E . || F ..-. || G --. ||  H .... || I .. || J .--- ||
 // K -.- || L .-.. || M -- || N -. || O --- || P .--. || Q --.- || R .-. || S ... || T - || 
 // U ..- || V ...- || W .-- || X -..- || Y -.-- || Z --.. ||
 // 1 .---- || 2 ..--- || 3 ...-- || 4 ....- || 5 ..... || 6 -.... || 7 --... || 8 ---.. ||
 // 9 ----. || 0 ----- ||
-//  -.-.-.-
-//, --..--
-//: ---...
-//; -.-.-.
-//. .-.-.-
-//" .-..-.
-//( -----.
-//) .-----
-//' -.--.-
+// SPACE -.-.-.- || , --..-- || : ---... || ; -.-.-. || . .-.-.- || " .-..-. || ( -----. ||
+// ) .----- || ' -.--.- || 
 
 void setup()
 {
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
-# short, or blink for half a second
+// short, or blink for half a second
 void s()
 {
   digitalWrite(LED_BUILTIN, HIGH);
@@ -30,7 +23,7 @@ void s()
   delay(500);
 }
 
-# long, or blink for 2 seconds
+// long, or blink for 2 seconds
 void l()
 {
   digitalWrite(LED_BUILTIN, HIGH);
@@ -39,6 +32,7 @@ void l()
   delay(500);
 }
 
+// Display BELLA, then pause for 10s
 void loop()
 {
   l(); s(); s(); s(); //B
